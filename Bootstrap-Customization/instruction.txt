@@ -1,0 +1,6 @@
+1.  Go to the project directory and open the terminal
+2.  run: npm init
+    and accept all by pressing enter
+3.  run: npm install bootstrap
+4. inside the project directory create a sass folder and create a scss file (eg: main.scss)
+5. and import the bootstrap default scss (@import '../node_modules/bootstrap/scss/bootstrap';) in your own scss file

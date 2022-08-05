@@ -1,0 +1,19 @@
+// Overriding Bootstrap default variable
+$primary: #c29938;
+$light: #fbf5e5;
+
+// Import the bootstrap function and variables for creating own variable and styling
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Creating own variable
+$custom-theme-color: (
+    "cust-white" : #ffffff,
+    "cust-black" : #000000
+);
+
+// merging the custom variable with bootstrap
+$theme-colors: map-merge($custom-theme-color, $theme-colors);
+
+// import default bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
